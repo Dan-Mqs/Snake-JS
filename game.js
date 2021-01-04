@@ -60,7 +60,7 @@ class Apple {
 		ctx.fillStyle = this.color;
 		ctx.fill()
 		ctx.strokeStyle = "black";
-		ctx.lineWidth = 3;
+		ctx.lineWidth = 1;
 		ctx.stroke();
 		ctx.closePath();
 
@@ -86,7 +86,7 @@ class Snake {
 		ctx.fillStyle = this.color;
 		ctx.fill();
 		ctx.strokeStyle = "black";
-		ctx.lineWidth = 3;
+		ctx.lineWidth = 1;
 		ctx.stroke();
 		ctx.closePath();
 
@@ -97,7 +97,7 @@ class Snake {
 			ctx.fillStyle = this.color;
 			ctx.fill();
 			ctx.strokeStyle = "black";
-			ctx.lineWidth = 3;
+			ctx.lineWidth = 1;
 			ctx.stroke();
 			ctx.closePath();
 

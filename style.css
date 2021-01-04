@@ -4,6 +4,21 @@
 	overflow: hidden;
 	box-sizing: border-box;
 }
+
+body {
+	font-family: 'Courier New', Courier, monospace;
+	background: #111;
+	text-align: center;
+}
+
 canvas {
 	background-color: #333;
+}
+
+#footer {
+	position: relative;
+}
+
+.author {
+	color: white;
 }
