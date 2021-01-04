@@ -170,11 +170,11 @@ class Snake {
 function showScore() {
 
     ctx.textAlign = "center";
-    ctx.font = "25px Helvetica";
+    ctx.font = "25px Courier";
     ctx.fillStyle = "white";
-    ctx.fillText("SCORE: " + score, width - 120, 30);
+    ctx.fillText("Score: " + score, width / 2, 30);
 
-}
+}   
 
 function showPaused() {
 
