@@ -18,7 +18,7 @@ function initialize() {
 	isPaused = false;
 
 	width = tileSize * Math.floor(window.innerWidth / tileSize);
-	height = tileSize * Math.floor(window.innerHeight / tileSize);
+	height = (tileSize * Math.floor(window.innerHeight / tileSize)) - tileSize;
 
 	canvas = document.getElementById("game-area");
 	canvas.width = width;
@@ -172,7 +172,8 @@ function showScore() {
     ctx.textAlign = "center";
     ctx.font = "25px Courier";
     ctx.fillStyle = "white";
-    ctx.fillText("Score: " + score, width / 2, 30);
+    ctx.fillText("Score: " + score, width / 2, 60);
+    ctx.fillText("Press 'space bar' to pause", width / 2, 30);
 
 }   
 
