@@ -26,7 +26,7 @@ function initialize() {
 	ctx = canvas.getContext("2d");
 
 	apple = new Apple(spawnLocation(), "red");
-	snake = new Snake({ x: tileSize * Math.floor(width / (2 * tileSize)), y: tileSize * Math.floor(height / (2 * tileSize)) }, "blue")
+	snake = new Snake({ x: tileSize * Math.floor(width / (2 * tileSize)), y: tileSize * Math.floor(height / (2 * tileSize)) }, "white")
 	
 }
 
@@ -94,7 +94,7 @@ class Snake {
 
 			ctx.beginPath();
 			ctx.rect(this.tail[i].x, this.tail[i].y, tileSize, tileSize);
-			ctx.fillStyle = this.color;
+			ctx.fillStyle = "grey";
 			ctx.fill();
 			ctx.strokeStyle = "black";
 			ctx.lineWidth = 1;
